@@ -2,6 +2,10 @@ import java.io.IOException;
 
 
 public class Print {
+	public void print (IllegalArgumentException e) {
+		System.out.println(e);
+	}
+	
 	public void print (IOException e) {
 		System.out.println(e);
 	}

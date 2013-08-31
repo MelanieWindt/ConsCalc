@@ -2,15 +2,12 @@ import java.io.*;
 
 
 public class Scan {
-	public String scan () {
-		BufferedReader br = new BufferedReader (new InputStreamReader(System.in));
-		String s=null;
-		try {
-			s = br.readLine();
-		} catch (IOException e) {
-			Print pr = new Print();
-			pr.print(e);
-		}
-		return s;
+	private BufferedReader br;
+	public Scan () {
+		this.br = new BufferedReader (new InputStreamReader(System.in));
+	}
+	
+	public String scan () throws IOException{
+		return br.readLine();		
 	} 
 }
